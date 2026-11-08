@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Итоговый проект по веб-верстке">
+    <title>Maxitet - Итоговый проект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Maxitet</a>
+            
+            <!-- Кнопка бургер для мобильных -->
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">О нас</a></li>
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <li><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный экран (Hero) -->
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Создаем <span class="text-accent">будущее</span> веб-разработки</h1>
+                <p class="hero__subtitle">Итоговый проект по дисциплине «Веб-верстка HTML/CSS»</p>
+                <a href="#contact" class="btn btn-primary">Связаться с нами</a>
+            </div>
+        </section>
+
+        <!-- Секция с карточками (Grid) -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="services__grid">
+                    <!-- Карточка 1 -->
+                    <article class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Верстка сайтов" class="card__img">
+                        <h3 class="card__title">HTML & CSS</h3>
+                        <p class="card__text">Корректная семантическая верстка любой сложности.</p>
+                        <button class="btn btn-outline">Подробнее</button>
+                    </article>
+                    <!-- Карточка 2 -->
+                    <article class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Адаптивность" class="card__img">
+                        <h3 class="card__title">Адаптивность</h3>
+                        <p class="card__text">Ваш сайт будет идеально выглядеть на любых устройствах.</p>
+                        <button class="btn btn-outline">Подробнее</button>
+                    </article>
+                    <!-- Карточка 3 -->
+                    <article class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Анимации" class="card__img">
+                        <h3 class="card__title">Анимации</h3>
+                        <p class="card__text">Плавные переходы и современные CSS-эффекты.</p>
+                        <button class="btn btn-outline">Подробнее</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с формой -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Обратная связь</h2>
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Ваше имя</label>
+                        <input type="text" id="name" class="form__input" placeholder="Иван" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" class="form__input" placeholder="mail@example.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Maxitet. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
